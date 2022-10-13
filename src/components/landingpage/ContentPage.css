@@ -1,0 +1,133 @@
+.clientSection {
+  padding: 70px 0;
+  background: #f8f8f8;
+}
+
+.dv-header-promo-grey {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-content: center;
+  width: 100%;
+}
+
+.dv-header-promo-grey h1.heading {
+  font-size: 40px;
+  line-height: 52px;
+  color: #2d2928;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5;
+}
+
+.dv-header-promo-grey p.description {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2d2928;
+  margin-bottom: 32px;
+  margin-top: 0;
+  letter-spacing: 0.5;
+}
+
+.dv-header-promo-grey__sticky-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dv-header-promo-grey__sticky-image img {
+  width: 540px;
+  height: 491px;
+}
+
+.dv-header-promo-grey__price-sticker {
+  width: 173px;
+  height: 173px;
+  border-radius: 50%;
+  background-color: #2d2928;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -104.49px;
+}
+
+.dv-header-promo-grey__price-sticker .price-from {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.dv-header-promo-grey__price-sticker .price-container {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.dv-header-promo-grey__price-sticker .price-description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.dv-header-promo-grey__sticky-image {
+  width: 474px;
+  height: 521px;
+  position: relative;
+}
+
+.dv-header-promo-grey__mini-order {
+  position: relative;
+  width: 550px;
+  z-index: 2;
+}
+
+.LandingMiniFormGlobal_Root_S-64A {
+  width: 100%;
+  max-width: 448px;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgb(49 50 56 / 10%);
+  border-radius: 16px;
+}
+
+.LandingMiniFormGlobal_Root_S-64A .bottom-input {
+  position: relative;
+  padding-top: 10px;
+}
+
+.cal-btn {
+  padding-top: 10px;
+}
+
+.Button_Wrapper_aMYRR Button {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 12px;
+}
+
+.LandingMiniFormGlobal_Description_2Vru6 {
+  padding-top: 8px;
+  color: #969493;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 1120px) {
+  .dv-header-promo-grey__sticky-container {
+    display: none;
+  }
+}
