@@ -130,7 +130,7 @@
     -webkit-border-radius 0.3s, -webkit-box-shadow 0.3s;
   box-sizing: border-box;
   text-align: left;
-  width: 960px;
+  /* width: 960px; */
   max-width: 960px;
 }
 
