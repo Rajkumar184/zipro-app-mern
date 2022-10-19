@@ -1,0 +1,170 @@
+.header{
+    padding: 5px 0;
+    background-color: #fff;
+    // animation: 2s ease-in-out 5s normal none 1s running fadeInDown;
+    .profileInfo{
+        justify-content: end;
+        width: 100%;
+
+        .nav-item{
+            color: #727479;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        a, .ant-dropdown-trigger, .width120{
+            margin-left: 20px;
+        }
+    }
+
+    .mobIcon{
+        font-size: 24px;
+    }
+}
+
+#header {
+    top: -100px;
+    transition: top 0.5s ease-in-out;
+  }
+  
+  #header.sticky {
+    position: sticky;
+    top: 0;
+  }
+
+#header.sticky {
+    z-index: 999;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loginSignup{
+    list-style-type: none;
+    li{
+        a{
+            text-align: left;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: block;
+            font-weight: 400;
+            width: 100%;
+            span{
+                position: relative;
+                &:before{
+                    content: "";
+                    margin-top: 10px;
+                    position: absolute;
+                    bottom: -7px;
+                    height: 2px;
+                    background: #fff;
+                    width: 0%;
+                    transition: width 1s ease;
+                }
+            }
+
+            &:hover{
+                span{
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.wrapperClass{
+    .loginDetails{
+        width: 340px;
+        position: absolute;
+        top: -5px;
+        right: 0;
+        background-color: #5746ec;
+        height: 0;
+        padding-top: 0;
+        transition: All .5s ease;
+        z-index: -1;
+    }
+
+    .loginSignup{
+        display: none;
+    }
+}
+
+.loginActive.wrapperClass{
+    .loginDetails{
+        height: 214px;
+        padding-top: 90px; 
+       z-index: 1;
+    }
+
+    .login_wrapper{
+        color: #fff;
+    }
+
+    .login_1{
+        display: block;
+    }
+}
+
+.registerActive.wrapperClass{
+    .loginDetails{
+       height: 214px;
+       padding-top: 90px; 
+       z-index: 1;
+    }
+
+    .login_wrapper{
+        color: #fff;
+    }
+
+    .register_1{
+        display: block;
+    }
+}
+
+.mobileHeader{
+    .ant-drawer-body{
+        padding-left: 0;
+    }
+    ul{
+        padding: 0;
+        list-style-type: none;
+        li{
+            a{
+                padding-left: 30px;
+                display: block;
+                margin-bottom: 15px;
+                color: #727479;
+                &:hover,&:active{
+                    color:#5746ec;
+                }
+            }
+        }
+    }
+    
+}
+
+.profileBtn{
+    button{
+        background: transparent;
+        border: none;
+        &:hover, &:focus, &:active{
+            background: transparent;
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        &::after{
+            display: none;
+        }
+    }
+
+    a{
+        margin-left: 0 !important;
+    }
+}

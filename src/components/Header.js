@@ -190,7 +190,9 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Login">
-              <Button color="inherit">Login</Button>
+              <Button component={Link} to="/login" color="inherit">
+                Login / signup
+              </Button>
             </Tooltip>
           </Box>
         </Toolbar>

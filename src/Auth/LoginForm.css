@@ -1,0 +1,224 @@
+.pay-meth p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.login-page .cards-border {
+  border: none;
+  border-radius: 1rem;
+  /*transition: all 0.2s;
+  */
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+}
+
+.login-page hr {
+  margin: 1.5rem 0;
+}
+
+.fa-li .fas {
+  color: #5746ec;
+}
+
+.for-pass {
+  color: #5746ec;
+}
+
+.login-page .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.login-page .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.login-page .card-price .period {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #808080d1;
+}
+
+.login-page ul li {
+  margin-bottom: 1rem;
+}
+
+.fa-ul li {
+  text-align: left;
+  font-size: 15px;
+}
+
+.cancel-any {
+  color: #5746ec;
+}
+
+.login-page .text-muted {
+  opacity: 0.7;
+}
+
+.login-page .btn {
+  font-size: 80%;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+
+  border: 2px solid #5746ec !important;
+  color: #fff !important;
+  background-color: #5746ec !important;
+  border-radius: 7px;
+  outline: none !important;
+  text-decoration: none;
+}
+
+.price-quest p {
+  font-size: 15px;
+  text-align: center;
+  color: #5c6372;
+}
+
+.card-price sup {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #808080d1;
+}
+
+.form-outline {
+  text-align: left !important;
+  font-size: 0.857rem;
+  color: #5e5873;
+}
+
+.card-text {
+  text-align: left !important;
+  color: #6e6b7b;
+}
+
+.cards-title {
+  text-align: left !important;
+  color: #5e5873;
+}
+
+.main-col {
+  max-width: 450px !important;
+}
+
+.inputs-field {
+  border: 1px solid #d8d6de !important;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 16px !important;
+  /* color: #6e6b7b !important; */
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #b3b3b3 !important;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b3b3b3 !important;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b3b3b3 !important;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b3b3b3 !important;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b3b3b3 !important;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #b3b3b3 !important;
+}
+
+.inputs-field {
+  border: 1px solid #d8d6de !important;
+}
+
+.lable-input {
+  align-items: center;
+  border: 1px solid #d8d6de !important;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.lable-input .form-control {
+  border: none;
+}
+
+.form-outline {
+  font-size: 0.857rem;
+  color: #5e5873;
+  text-align: left !important;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  /* .pricing .card:hover {
+      margin-top: -0.25rem;
+      margin-bottom: 0.25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .pricing .card:hover .btn {
+      opacity: 1;
+    } */
+}
+
+.orSeparator {
+  margin: 15px 0;
+
+  position: relative;
+}
+
+.orSeparator span {
+  padding: 0 15px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.orSeparator:after {
+  content: "";
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.loginWithGoogle {
+}
+
+.loginWithGoogle button {
+  width: 100%;
+  justify-content: center;
+}

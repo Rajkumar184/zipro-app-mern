@@ -195,12 +195,12 @@ const ContentPage = () => {
           <div className="col-12 col-lg-6">
             <div class="dv-header-promo-grey__sticky-container">
               <div class="dv-header-promo-grey__sticky-image">
-                <div class="dv-header-promo-grey__price-sticker">
+                {/* <div class="dv-header-promo-grey__price-sticker">
                   {" "}
                   <div class="price-from"> From </div>{" "}
                   <div class="price-container"> ₹ 45* </div>{" "}
                   <p class="price-description">new price</p>{" "}
-                </div>{" "}
+                </div>{" "} */}
                 <img src={delivery} alt="srv" />
               </div>
             </div>
