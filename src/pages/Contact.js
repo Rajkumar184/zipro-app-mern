@@ -6,7 +6,6 @@ const Contact = () => {
   return (
     <>
       <Header />
-
       <div>
         <section className="topSection2" style={{ backgroundColor: "#F8F8F8" }}>
           <div className="container-lg">
