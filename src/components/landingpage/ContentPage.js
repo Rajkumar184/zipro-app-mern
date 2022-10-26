@@ -1,9 +1,11 @@
 import React from "react";
 import "./ContentPage.css";
-import delivery from "../../assests/img/delivery.jpg";
+// import delivery from "../../assests/img/delivery.jpg";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import Button from "@mui/material/Button";
+import delivery from "../../assests/lotties/delivery.json";
+import Lottie from "react-lottie";
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
 const top100Films = [
@@ -134,6 +136,15 @@ const top100Films = [
   { label: "Monty Python and the Holy Grail", year: 1975 },
 ];
 const ContentPage = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: delivery,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section className="clientSection">
       <div className="container-lg">
@@ -201,7 +212,7 @@ const ContentPage = () => {
                   <div class="price-container"> ₹ 45* </div>{" "}
                   <p class="price-description">new price</p>{" "}
                 </div>{" "} */}
-                <img src={delivery} alt="srv" />
+                <Lottie options={defaultOptions} height={490} width={550} />
               </div>
             </div>
           </div>

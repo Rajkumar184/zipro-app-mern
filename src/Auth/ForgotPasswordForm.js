@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Spinner } from "reactstrap";
+
 import "./LoginForm.css";
 import TextField from "@mui/material/TextField";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputAdornment from "@mui/material/InputAdornment";
-import IconButton from "@mui/material/IconButton";
-import InputLabel from "@mui/material/InputLabel";
-import FormControl from "@mui/material/FormControl";
+import ChevronLeftOutlinedIcon from "@mui/icons-material/ChevronLeftOutlined";
+
 import Button from "@mui/material/Button";
 import logo from "../assests/img/logo.png";
 import Avatar from "@mui/material/Avatar";
@@ -79,7 +74,7 @@ const LoginForm = () => {
                   <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                  Sign in
+                  Forgot Password?
                 </Typography>
               </div>
 
@@ -95,7 +90,8 @@ const LoginForm = () => {
                 Welcome to Nextyn!
               </h4> */}
               <p className="mb-4 mt-4" style={{ color: "#6e6b7b" }}>
-                Please sign-in to your account
+                Enter your email and we'll send you instructions to reset your
+                password
               </p>
             </div>
             <form>
@@ -108,44 +104,7 @@ const LoginForm = () => {
                   variant="outlined"
                 />
               </div>
-              <div className="form-outline mb-4">
-                <FormControl
-                  className="form-control form-control-lg mb-3"
-                  variant="outlined"
-                >
-                  <InputLabel htmlFor="outlined-adornment-password">
-                    Password
-                  </InputLabel>
-                  <OutlinedInput
-                    required
-                    fullWidth
-                    id="outlined-adornment-password"
-                    type={values.showPassword ? "text" : "password"}
-                    value={values.password}
-                    onChange={handleChange("password")}
-                    endAdornment={
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          onMouseDown={handleMouseDownPassword}
-                          edge="end"
-                        >
-                          {values.showPassword ? (
-                            <VisibilityOff />
-                          ) : (
-                            <Visibility />
-                          )}
-                        </IconButton>
-                      </InputAdornment>
-                    }
-                    label="Password"
-                  />
-                </FormControl>
-                <Link to="/forgot-password" style={{ textDecoration: "none" }}>
-                  <small style={{ color: "#5746ec" }}>Forgot Password?</small>
-                </Link>
-              </div>
+
               <div>
                 <Button
                   style={{
@@ -155,17 +114,25 @@ const LoginForm = () => {
                   type="submit"
                   variant="contained"
                 >
-                  Login
+                  Send reset link
                 </Button>
               </div>
             </form>
 
-            <p className="text-center mt-3">
-              <span className="pe-2 card-text">New on our platform?</span>
-              <Link to="/signup">
-                <span className="for-pass">Create an account</span>
-              </Link>
-            </p>
+            <div className="form-group">
+              <p className="text-center mt-5">
+                <Link to="/login" style={{ textDecoration: "none" }}>
+                  <ChevronLeftOutlinedIcon
+                    className="mr-25"
+                    size={14}
+                    style={{ color: "#523EE8" }}
+                  />
+                  <span className="align-middle" style={{ color: "#523EE8" }}>
+                    Back to login
+                  </span>
+                </Link>
+              </p>
+            </div>
             {/* <div className="orSeparator">
               <span>Or</span>
             </div> */}

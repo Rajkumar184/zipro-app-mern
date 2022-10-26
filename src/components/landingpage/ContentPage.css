@@ -39,10 +39,10 @@
   flex-direction: column;
 }
 
-.dv-header-promo-grey__sticky-image img {
-  width: 540px;
+/* .dv-header-promo-grey__sticky-image .lottiee {
+  width: 600px;
   height: 491px;
-}
+} */
 
 .dv-header-promo-grey__price-sticker {
   width: 173px;

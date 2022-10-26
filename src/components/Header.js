@@ -170,7 +170,7 @@ const Navbar = () => {
             <Button
               variant="text"
               component={Link}
-              to="/Product"
+              to="/order"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
@@ -180,7 +180,7 @@ const Navbar = () => {
             <Button
               variant="text"
               component={Link}
-              to="/Contact"
+              to="/contact"
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >

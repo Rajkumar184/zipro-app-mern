@@ -76,7 +76,10 @@ const RegisterForm = () => {
                     to={"/"}
                   >
                     <div>
-                      <Avatar sx={{ m: 2, bgcolor: "secondary.main" }}>
+                      <Avatar
+                        className="text-center mx-auto"
+                        sx={{ bgcolor: "secondary.main" }}
+                      >
                         <LockOutlinedIcon />
                       </Avatar>
                       <Typography component="h1" variant="h5">
@@ -178,6 +181,8 @@ const RegisterForm = () => {
 
                       <div>
                         <Button
+                          component={Link}
+                          to={"/kyc"}
                           style={{
                             height: "40px",
                             width: "100%",
