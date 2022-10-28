@@ -19,7 +19,7 @@ function App() {
         <Route exact="true" path="/login" element={<Login />}></Route>
 
         <Route exact="true" path="/signup" element={<Register />}></Route>
-
+        {/* 
         <Route
           exact="true"
           path="/forgot-password"
@@ -30,7 +30,7 @@ function App() {
 
         <Route exact="true" path="/contact" element={<Contact />}></Route>
 
-        <Route exact="true" path="/order" element={<OrderDelivery />}></Route>
+        <Route exact="true" path="/order" element={<OrderDelivery />}></Route> */}
       </Routes>
     </>
   );
